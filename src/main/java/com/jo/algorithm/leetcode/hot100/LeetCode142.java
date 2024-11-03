@@ -7,6 +7,9 @@ import com.jo.algorithm.leetcode.ListNode;
  * Author:Jo
  * Description:142. 环形链表 II
  */
+//fast 比 slow多走一圈
+//slow = l + x
+//fast = 2(l+x) = l + r + x --> l = r-x -- 环的入口
 public class LeetCode142 {
     public class Solution {
         public ListNode detectCycle(ListNode head) {
