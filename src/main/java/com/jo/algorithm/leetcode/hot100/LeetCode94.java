@@ -1,6 +1,5 @@
 package com.jo.algorithm.leetcode.hot100;
 
-import com.jo.algorithm.leetcode.ListNode;
 import com.jo.algorithm.leetcode.TreeNode;
 
 import java.util.ArrayList;
@@ -28,5 +27,14 @@ public class LeetCode94 {
             list.add(root.val);
             inOrder(list, root.right);
         }
+    }
+    //迭代
+    class Solution1 {
+        public List<Integer> inorderTraversal(TreeNode root) {
+
+            return null;
+        }
+
+
     }
 }
