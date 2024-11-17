@@ -3,7 +3,7 @@ package com.jo.algorithm.leetcode.hot100;
 /**
  * Date:2024/11/15
  * Author:Jo
- * Description:
+ * Description:121. 买卖股票的最佳时机
  */
 public class LeetCode121 {
     public class Solution {
@@ -19,5 +19,16 @@ public class LeetCode121 {
             }
             return maxprofit;
         }
+
+        public int maxProfit2(int prices[]) {
+            int maxProfit = 0;
+            int minPrice = Integer.MAX_VALUE;
+            for (int i = 0; i < prices.length; i++) {
+                minPrice = Math.min(prices[i], minPrice);
+                maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+            }
+            return minPrice;
+        }
+
     }
 }
