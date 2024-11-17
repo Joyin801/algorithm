@@ -12,10 +12,20 @@ class AlgorithmApplicationTests {
     }
 
     class Solution {
+        public int maxProfit(int prices[]) {
+            int maxProfit = 0;
+            int minPrice = Integer.MAX_VALUE;
+            for (int i = 0; i < prices.length; i++) {
+                minPrice = Math.min(prices[i], minPrice);
+                maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+            }
+            return minPrice;
+        }
+
         public ListNode swapPairs2(ListNode head) {
-            ListNode dummy = new ListNode(0,head);
+            ListNode dummy = new ListNode(0, head);
             ListNode temp = dummy;
-            while(temp.next != null && temp.next.next != null){
+            while (temp.next != null && temp.next.next != null) {
                 ListNode node1 = temp.next;
                 ListNode node2 = temp.next.next;
                 temp.next = node2;
