@@ -22,6 +22,21 @@ public class LeetCode45 {
             }
             return steps;
         }
+
         //方法二：正向查找可到达的最大位置
+        public int jump(int[] nums) {
+            int len = nums.length;
+            int steps = 0;
+            int end = 0;
+            int maxLen = 0;
+            for (int i = 0; i < len - 1; i++) {
+                maxLen = Math.max(i + nums[i], maxLen);
+                if (i == end) {
+                    end = maxLen;
+                    steps++;
+                }
+            }
+            return steps;
+        }
     }
 }
