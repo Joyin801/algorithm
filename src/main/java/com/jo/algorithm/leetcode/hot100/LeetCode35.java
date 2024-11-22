@@ -5,7 +5,7 @@ package com.jo.algorithm.leetcode.hot100;
  * Author:Jo
  * Description:35. 搜索插入位置
  */
-public class LeetCod35 {
+public class LeetCode35 {
     class Solution {
         public int searchInsert(int[] nums, int target) {
             int left = 0;
