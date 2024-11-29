@@ -7,7 +7,7 @@ package com.jo.algorithm.leetcode.hot100;
  */
 public class LeetCode198 {
     class Solution {
-        public int rob(int[] nums) {
+        public int rob1(int[] nums) {
             if (nums == null || nums.length == 0) {
                 return 0;
             }
