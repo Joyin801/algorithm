@@ -7,6 +7,8 @@ package com.jo.algorithm.leetcode.hot100;
  */
 public class SubarrayProductLessThanK {
     class Solution {
+        //时间复杂度O(n)
+        //空间复杂度O(1)
         public int numSubarrayProductLessThanK(int[] nums, int k) {
             if (k <= 1) {
                 return 0;
