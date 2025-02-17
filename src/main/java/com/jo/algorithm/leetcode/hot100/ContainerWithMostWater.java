@@ -1,4 +1,4 @@
-package com.jo.algorithm.leetcode;
+package com.jo.algorithm.leetcode.hot100;
 
 /**
  * Date:2025/2/16

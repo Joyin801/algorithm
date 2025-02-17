@@ -1,4 +1,4 @@
-package com.jo.algorithm.leetcode;
+package com.jo.algorithm.leetcode.hot100;
 
 import java.util.Arrays;
 import java.util.HashSet;
