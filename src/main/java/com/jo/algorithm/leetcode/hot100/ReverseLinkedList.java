@@ -5,7 +5,7 @@ import com.jo.algorithm.leetcode.ListNode;
 /**
  * Date:2025/2/22
  * Author:Jo
- * Description:206. Reverse Linked List
+ * Description:f
  */
 public class ReverseLinkedList {
     class Solution {
