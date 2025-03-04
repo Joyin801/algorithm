@@ -28,4 +28,20 @@ public class LeetCode3 {
             return ans;
         }
     }
+
+    public int lengthOfLongestSubstring(String s) {
+        int ans = 0;
+        int left = 0;
+        Map<Character, Integer> map = new HashMap();
+        for (int right = 0; right < s.length(); right++) {
+            char curch = s.charAt(right);
+            map.put(curch, map.getOrDefault(curch, 0) + 1);
+            while (map.get(s.charAt(right)) > 1) {
+                map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
+                left++;
+            }
+            ans = Math.max(ans, (right - left + 1));
+        }
+        return ans;
+    }
 }
